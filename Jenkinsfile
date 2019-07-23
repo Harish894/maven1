@@ -4,7 +4,7 @@ node{
 	    git 'https://github.com/siraj09/maven_repo'
 		}
 	stage('Compile-Package'){
-		def mvnHome = tool,name: 'maven-3', type: 'maven'
+		def mvnHome = tool name: 'maven-3', type: 'maven'
 		sh "${mvnHome}/bin/mvn package"		
 	}
 	}
